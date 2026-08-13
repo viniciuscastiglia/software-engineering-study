@@ -1,1 +1,1 @@
-# software-engineering-study
+Repository to study Software engineering + AI engineering in a long term period subdivided in 3 phases, 1. Solid Fundamentals; 2. Applied AI Engineering; 3. Improving and keep creating real projects.
