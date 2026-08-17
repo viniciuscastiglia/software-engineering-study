@@ -2,7 +2,7 @@
 
 > Fonte de continuidade. Atualizo conforme avanço e compartilho no início de cada sessão.
 
-**Última atualização:** 12/08/2026
+**Última atualização:** 13/08/2026
 
 ---
 
@@ -58,7 +58,7 @@ Depois de preencher: cola o bloco de meta no início da sessão com o Claude.
 
 ## Fase 1 — andamento das trilhas
 - [ ] 1.1 Linguagem (JS/TS a fundo)
-- [ ] 1.2 DSA — ____/150 problemas
+- [ ] 1.2 DSA — 2/150 problemas
 - [ ] 1.3 Fundamento de CS (SO, redes, terminal)
 - [ ] 1.4 Git e fluxo profissional
 - [ ] 1.5 Backend além de CRUD (auth, cache, filas, rate limiting)
@@ -78,7 +78,9 @@ Depois de preencher: cola o bloco de meta no início da sessão com o Claude.
 | Data | O que fiz | Tempo | Onde parei |
 |------|-----------|-------|------------|
 | Semana 06–12/08 | Kaggle Intro to Machine Learning (curso inteiro) + primeira submissão House Prices | — | Curso concluído. **Frentes que zeraram: js.info, DSA, espinha, T1.** |
-| 12/08 | Repo da espinha criado + README em inglês + ADR-001 e ADR-002 | 3h | README e os dois ADRs commitados. Falta: T1 do mês |
+| 12/08 | Repo da espinha criado + README em inglês + ADR-001 e ADR-002 | 3h | README e os dois ADRs commitados. Falta: T1 do mês | 
+| 13/08 | Javascript.info caps 2.4-2.7 | 2h | Todos exercícios feitos. Falta: T1 do mês |
+| 16/08 | Javascript.info cap 2.8 e DSA 1 e 2 / 150| 2h |. Falta: T1 do mês |
 
 ---
 
@@ -95,7 +97,7 @@ Depois de preencher: cola o bloco de meta no início da sessão com o Claude.
 ---
 
 ## Recursos em andamento
-- **javascript.info:** parei no cap. 2.3, retomo no 2.4
+- **javascript.info:** parei no cap. 2.8, retomo no 2.9
 - **DSA:** padrão atual = Arrays & Hashing (NeetCode)
 - **Preditivo:** Kaggle Intro to ML concluído → próximo artefato é a EDA
 - **DDIA:** leitura lenta ao longo dos 18 meses — [capítulo]
