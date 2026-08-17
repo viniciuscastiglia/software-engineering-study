@@ -24,7 +24,7 @@
 | DSA | 3h | 4 problemas — Arrays & Hashing (2/150 → 6/150) | |
 | Projeto-espinha | 1h30 | Schema da tabela de vagas em `.sql` no repo. **Nada instalado, nada conectado** — é trabalho de papel | |
 | T1 | 1h | PR de documentação — **até quarta** | |
-| T2 | — | ADR-004: schema da tabela de vagas, no dia da decisão | |
+| T2 | — | ADR-003: schema da tabela de vagas, no dia da decisão | |
 
 **Alvo total: ~16h** fora das aulas.
 
@@ -36,7 +36,7 @@
 | Qua 19 | js.info 2.13–2.14 (loops, switch) → DSA 2 problemas | 2h30 |
 | Qui 20 | Preditivo bloco 2: correlações com `SalePrice`, 3 hipóteses escritas, notebook commitado | 2h |
 | Sex 21 | js.info 2.15–2.16 (funções, function expressions) — sem pressa | 2h30 |
-| Sáb 22 | Espinha: schema em `.sql` + ADR-004 → DSA 2 problemas | 3h |
+| Sáb 22 | Espinha: schema em `.sql` + ADR-003 → DSA 2 problemas | 3h |
 | Dom 23 | js.info 2.17–2.18 (arrow functions, specials) + ritual | 2h30 |
 
 **Amarrações:** loops (2.13) e DSA caem no mesmo dia, de propósito. EDA parte em dois blocos — o primeiro é mecânico, o segundo é onde eu penso; hipótese escrita no cansaço vira enfeite. Sexta e domingo são as seções de função, as mais densas do capítulo — por isso têm 2h30 e não 1h30.
@@ -111,8 +111,8 @@ Depois de preencher: cola o bloco de meta no início da sessão com o Claude.
 
 ## Próximas 3 ações
 1. **T1 do mês 1 — PR de documentação, até quarta.** Atrasado há 3 semanas. O javascript.info tem "Edit on GitHub" no rodapé de toda página.
-2. ADR-004: schema da tabela de vagas
-3. ADR-003: decisão de expor só API REST, sem front, na Fase 1
+2. ADR-003: schema da tabela de vagas
+3. Decisão de expor só API REST, sem front, na Fase 1 — vira ADR só se houver alternativa real descartada
 
 ---
 
