@@ -100,6 +100,7 @@ Depois de preencher: cola o bloco de meta no início da sessão com o Claude.
 | 13/08 | javascript.info caps 2.4–2.7 | 2h | Todos exercícios feitos. Falta: T1 do mês |
 | 16/08 | javascript.info cap 2.8 + DSA 1 e 2 / 150 | 2h | Falta: T1 do mês |
 | **Fecha semana 1 (10–16/08)** | Preditivo ✓ · js.info ✓ · DSA piso · espinha ✓ (repo + ADRs) · **T1 zerou** | ~12h | Alvo era 15h. Única frente zerada: T1 |
+| 17/08 | javascript.info cap 2.9 - 2.12| 2h | Todos exercícios feitos. Falta: T1 do mês |
 
 ---
 
