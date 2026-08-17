@@ -2,37 +2,53 @@
 
 > Fonte de continuidade. Atualizo conforme avanço e compartilho no início de cada sessão.
 
-**Última atualização:** 13/08/2026
+**Última atualização:** 17/08/2026
 
 ---
 
 ## Status atual
 - **Fase:** 1 — Fundamento sólido (mês 1–6)
-- **Módulo Inteli:** Modelo Preditivo — semana 2 de 10
+- **Módulo Inteli:** Modelo Preditivo — semana 3 de 10 · trilha: seção 2 (EDA)
 - **Projeto-espinha:** agregador de vagas remotas internacionais — https://github.com/viniciuscastiglia/job-ingestion-pipeline
 
 ---
 
 ## 🎯 Meta da semana
 
-**Semana de:** [data de segunda]
+**Semana de:** 17/08/2026
 
 | Frente | Horas-alvo | Alvo desta semana | Bateu? |
 |--------|-----------|-------------------|--------|
-| Preditivo (satélite) | 4h | EDA completa do House Prices commitada: distribuições, faltantes, correlações, 3 hipóteses escritas | |
-| javascript.info | 4h | 3 sessões, a partir do cap. 2.4 | |
-| DSA | 3h | 4 problemas — Arrays & Hashing | |
-| Projeto-espinha | 3h | v1 burro: API do Remote OK → script puxa → Postgres local → salva → rota que lista | |
-| T1 / T2 | 1h | ADR quando aparecer decisão não-óbvia (modelagem da tabela de vagas é uma) | |
+| javascript.info | 6h30 | Fechar o cap. 2: seções 2.9 → 2.18 | |
+| Preditivo (satélite) | 4h | EDA do House Prices commitada: distribuições, faltantes, correlações com `SalePrice`, 3 hipóteses escritas | |
+| DSA | 3h | 4 problemas — Arrays & Hashing (2/150 → 6/150) | |
+| Projeto-espinha | 1h30 | Schema da tabela de vagas em `.sql` no repo. **Nada instalado, nada conectado** — é trabalho de papel | |
+| T1 | 1h | PR de documentação — **até quarta** | |
+| T2 | — | ADR-004: schema da tabela de vagas, no dia da decisão | |
 
-**Alvo total: ~15h** fora das aulas.
+**Alvo total: ~16h** fora das aulas.
+
+### Cronograma
+| Dia | Bloco | h |
+|---|---|---|
+| Seg 17 | js.info 2.9–2.12 (comparações, if/?, lógicos, ??) + abre o PR do T1 | 2h |
+| Ter 18 | Preditivo bloco 1: carrega `train.csv`, shape, dtypes, % de faltantes por coluna, distribuições | 2h |
+| Qua 19 | js.info 2.13–2.14 (loops, switch) → DSA 2 problemas | 2h30 |
+| Qui 20 | Preditivo bloco 2: correlações com `SalePrice`, 3 hipóteses escritas, notebook commitado | 2h |
+| Sex 21 | js.info 2.15–2.16 (funções, function expressions) — sem pressa | 2h30 |
+| Sáb 22 | Espinha: schema em `.sql` + ADR-004 → DSA 2 problemas | 3h |
+| Dom 23 | js.info 2.17–2.18 (arrow functions, specials) + ritual | 2h30 |
+
+**Amarrações:** loops (2.13) e DSA caem no mesmo dia, de propósito. EDA parte em dois blocos — o primeiro é mecânico, o segundo é onde eu penso; hipótese escrita no cansaço vira enfeite. Sexta e domingo são as seções de função, as mais densas do capítulo — por isso têm 2h30 e não 1h30.
+
+**O schema é papel, não banco.** Decidir campos, obrigatoriedade, nulos e qual chave identifica a mesma vaga vinda de fontes diferentes (Remote OK e WWR publicam a mesma vaga com títulos diferentes — o que é duplicata?). Isso é modelagem, e eu já consigo hoje. Índice, EXPLAIN, n+1 e transação são a 1.6, e servem pra otimizar tabela que já existe. Pode cair em qualquer dia da semana.
 
 ### Piso (semana ruim ainda conta como semana)
 Commit diário + 2 problemas de DSA + 1 sessão de js.info + entrega do Inteli. **~6h.**
 
 ### Ordem de corte quando a semana apertar
-DSA extra → espinha → js.info cai pra 2x.
-**Nunca corta:** commit diário, entrega do Inteli, preditivo abaixo do que o módulo exige.
+DSA de sábado → espinha sai inteira (schema escorrega pra semana que vem) → js.info de segunda cai pra 2 seções.
+**Nunca corta:** commit diário, entrega do Inteli, preditivo abaixo do que o módulo exige, **e as seções de função (2.15–2.17)**.
 Corta **antes** de começar a semana, não no meio.
 
 ---
@@ -52,12 +68,14 @@ Corta **antes** de começar a semana, não no meio.
 
 **Teste:** se a resposta exigir decisão de *arquitetura*, leva pro Claude. Se for só "o que vem a seguir na sequência", este arquivo já responde.
 
+**Preencher sempre:** campo "Semana de" e a coluna de horas do log. Log sem data e sem hora não dá pra reler depois.
+
 Depois de preencher: cola o bloco de meta no início da sessão com o Claude.
 
 ---
 
 ## Fase 1 — andamento das trilhas
-- [ ] 1.1 Linguagem (JS/TS a fundo)
+- [ ] 1.1 Linguagem (JS/TS a fundo) — javascript.info cap. 2 em andamento
 - [ ] 1.2 DSA — 2/150 problemas
 - [ ] 1.3 Fundamento de CS (SO, redes, terminal)
 - [ ] 1.4 Git e fluxo profissional
@@ -68,38 +86,40 @@ Depois de preencher: cola o bloco de meta no início da sessão com o Claude.
 - [ ] 🎯 Projeto-espinha no ar (não localhost)
 
 ### Disciplinas transversais (rodam desde o mês 1)
-- **T1 — exposições externas:** ___/mês · pelo menos 1 crítica que mudou uma decisão? [ ]
-- **T2 — ADRs escritos:** 2 · posts públicos: ___/4 na fase
-- **T3 — sessões de caos:** ___ (mín. 1 por projeto-espinha)
+- **T1 — exposições externas:** 0/mês · pelo menos 1 crítica que mudou uma decisão? [ ] · **atrasado, 3 semanas**
+- **T2 — ADRs escritos:** 2 (ADR-001, ADR-002) · posts públicos: 0/4 na fase
+- **T3 — sessões de caos:** 0 (mín. 1 por projeto-espinha)
 
 ---
 
 ## Log de sessões
 | Data | O que fiz | Tempo | Onde parei |
 |------|-----------|-------|------------|
-| Semana 06–12/08 | Kaggle Intro to Machine Learning (curso inteiro) + primeira submissão House Prices | — | Curso concluído. **Frentes que zeraram: js.info, DSA, espinha, T1.** |
-| 12/08 | Repo da espinha criado + README em inglês + ADR-001 e ADR-002 | 3h | README e os dois ADRs commitados. Falta: T1 do mês | 
-| 13/08 | Javascript.info caps 2.4-2.7 | 2h | Todos exercícios feitos. Falta: T1 do mês |
-| 16/08 | Javascript.info cap 2.8 e DSA 1 e 2 / 150| 2h |. Falta: T1 do mês |
+| 10–16/08 | Kaggle Intro to Machine Learning (curso inteiro) + primeira submissão House Prices | [preencher] | Curso concluído |
+| 12/08 | Repo da espinha criado + README em inglês + ADR-001 e ADR-002 | 3h | README e os dois ADRs commitados. Falta: T1 do mês |
+| 13/08 | javascript.info caps 2.4–2.7 | 2h | Todos exercícios feitos. Falta: T1 do mês |
+| 16/08 | javascript.info cap 2.8 + DSA 1 e 2 / 150 | 2h | Falta: T1 do mês |
+| **Fecha semana 1 (10–16/08)** | Preditivo ✓ · js.info ✓ · DSA piso · espinha ✓ (repo + ADRs) · **T1 zerou** | ~12h | Alvo era 15h. Única frente zerada: T1 |
 
 ---
 
 ## Bloqueios atuais
-- [dúvida ou coisa que travou — trazer pro Claude na próxima sessão]
+- **Espinha travada em async, não só no fetch.** Puxar a API do Remote OK exige promises/async — mas conectar no Postgres pelo Node também (`await client.connect()`). É a mesma trava. Não é lacuna de sintaxe como loop era pro DSA; é modelo mental. Decisão: desvio cirúrgico no 11.1–11.2 depois de fechar o cap. 2. Duas seções, destino definido, não o capítulo inteiro. Isso destrava fetch + conexão + insert + rota de uma vez — ou seja, o v1 inteiro.
+- **O que dá pra fazer antes disso:** schema. Modelagem é papel, não exige banco rodando.
 
 ---
 
 ## Próximas 3 ações
-1. T1 do mês 1: PR de documentação em algum repo que eu uso — atrasado
-2. ADR-003: decisão de expor só API REST, sem front, na Fase 1
-3. v1 burro da espinha (semana que vem)
+1. **T1 do mês 1 — PR de documentação, até quarta.** Atrasado há 3 semanas. O javascript.info tem "Edit on GitHub" no rodapé de toda página.
+2. ADR-004: schema da tabela de vagas
+3. ADR-003: decisão de expor só API REST, sem front, na Fase 1
 
 ---
 
 ## Recursos em andamento
-- **javascript.info:** parei no cap. 2.8, retomo no 2.9
+- **javascript.info:** parei no cap. 2.8, retomo no 2.9. Cap. 2 fecha no 2.18
 - **DSA:** padrão atual = Arrays & Hashing (NeetCode)
-- **Preditivo:** Kaggle Intro to ML concluído → próximo artefato é a EDA
+- **Preditivo:** Kaggle Intro to ML concluído → próximo artefato é a EDA. Data Visualization como consulta, não do começo ao fim
 - **DDIA:** leitura lenta ao longo dos 18 meses — [capítulo]
 
 ---
@@ -114,3 +134,4 @@ Depois de preencher: cola o bloco de meta no início da sessão com o Claude.
 - A espinha é onde eu **aplico** o que aprendi — não é onde eu aprendo. Por isso ela nunca come hora de js.info nem de DSA.
 - Uma frente não pode comer a semana inteira. Teto do satélite é teto, não meta.
 - Semana ruim que bate o piso **conta como semana**. O piso existe pra isso.
+- Fechar capítulo não é o objetivo; entender é. Acelerar as seções densas pra bater checkbox é autoengano.
